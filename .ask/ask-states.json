@@ -1,10 +1,19 @@
 {
   "askcliStatesVersion": "2020-03-31",
   "profiles": {
-    "default": {
+    "__ENVIRONMENT_ASK_PROFILE__": {
+      "skillId": "amzn1.ask.skill.b85d9772-d4ac-4ca9-8485-cd3cf13cc708",
       "skillInfrastructure": {
         "@ask-cli/cfn-deployer": {
-          "deployState": {}
+          "deployState": {
+            "default": {
+              "s3": {
+                "bucket": "ask-skill-sample-nodejs-he-alexa-euwest2-1634850141704",
+                "key": "endpoint/build.zip"
+              },
+              "stackId": "arn:aws:cloudformation:eu-west-2:089650354027:stack/ask-skill-sample-nodejs-hello-world-cp-default-skillStack-1634850141704/2fdd4300-32b2-11ec-9be9-06f77f106022"
+            }
+          }
         }
       }
     }
